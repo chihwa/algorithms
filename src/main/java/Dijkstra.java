@@ -11,7 +11,6 @@ interface DirectedEdge {
 interface EdgeWeightedDigraph {
     //the num of vertexes
     int V();
-
     //return list of adjacent edges
     List<DirectedEdge> adj(int v);
 }
@@ -39,7 +38,6 @@ public class Dijkstra {
                 relax(e);
             }
         }
-
     }
 
     private void relax(DirectedEdge e) {
