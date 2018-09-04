@@ -34,9 +34,8 @@ public class Dijkstra {
         while (!pq.isEmpty()) {
             int vertex[] = pq.remove();
             int vertexId = vertex[0];
-            for (DirectedEdge e : G.adj(vertexId)) {
+            for (DirectedEdge e : G.adj(vertexId))
                 relax(e);
-            }
         }
     }
 
