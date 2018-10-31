@@ -2,19 +2,6 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.PriorityQueue;
 
-interface DirectedEdge {
-    int from();
-    int to();
-    int weight();
-}
-
-interface EdgeWeightedDigraph {
-    //the num of vertexes
-    int V();
-    //return list of adjacent edges
-    List<DirectedEdge> adj(int v);
-}
-
 public class Dijkstra {
     private DirectedEdge[] edgeTo;
     private int[] distTo;
